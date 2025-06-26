@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atatürk'ün İnkılapları</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-star"></i>
+                    <span>Atatürk İnkılapları</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#inkilaplar">İnkılaplar</a></li>
+                    <li><a href="#timeline">Kronoloji</a></li>
+                    <li><a href="#about">Hakkında</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Mustafa Kemal Atatürk'ün İnkılapları</h1>
+                <p>Türkiye Cumhuriyeti'nin kuruluşu ve modernleşmesi yolunda atılan devrim niteliğindeki adımlar</p>
+                <a href="#inkilaplar" class="cta-button">İnkılapları Keşfet</a>
+            </div>
+            <div class="hero-image">
+                <div class="ataturk-silhouette"></div>
+            </div>
+        </section>
+
+        <section id="inkilaplar" class="inkilaplar-section">
+            <div class="container">
+                <h2>Atatürk'ün İnkılapları</h2>
+                <p class="section-description">Türkiye'yi modern bir devlet haline getiren temel inkılaplar</p>
+                
+                <div class="inkilaplar-grid">
+                    <div class="inkilap-card" data-category="siyasi">
+                        <div class="card-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Siyasi İnkılaplar</h3>
+                        <p>Saltanatın kaldırılması, Cumhuriyetin ilanı, Halifeliğin kaldırılması</p>
+                        <button class="details-btn" onclick="showDetails('siyasi')">Detayları Gör</button>
+                    </div>
+
+                    <div class="inkilap-card" data-category="hukuki">
+                        <div class="card-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Hukuki İnkılaplar</h3>
+                        <p>Teşkilat-ı Esasiye Kanunu, Türk Medeni Kanunu, Ceza Kanunu</p>
+                        <button class="details-btn" onclick="showDetails('hukuki')">Detayları Gör</button>
+                    </div>
+
+                    <div class="inkilap-card" data-category="egitim">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Eğitim ve Kültür İnkılapları</h3>
+                        <p>Tevhid-i Tedrisat Kanunu, Harf İnkılabı, Türk Tarih Kurumu</p>
+                        <button class="details-btn" onclick="showDetails('egitim')">Detayları Gör</button>
+                    </div>
+
+                    <div class="inkilap-card" data-category="sosyal">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Sosyal İnkılaplar</h3>
+                        <p>Kadın hakları, Şapka Kanunu, Soyadı Kanunu</p>
+                        <button class="details-btn" onclick="showDetails('sosyal')">Detayları Gör</button>
+                    </div>
+
+                    <div class="inkilap-card" data-category="ekonomik">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Ekonomik İnkılaplar</h3>
+                        <p>İzmir İktisat Kongresi, Devletçilik politikası, Sanayi planları</p>
+                        <button class="details-btn" onclick="showDetails('ekonomik')">Detayları Gör</button>
+                    </div>
+
+                    <div class="inkilap-card" data-category="diger">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Diğer İnkılaplar</h3>
+                        <p>Takvim, saat, ölçü birimleri, uluslararası rakamlar</p>
+                        <button class="details-btn" onclick="showDetails('diger')">Detayları Gör</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2>İnkılapların Kronolojisi</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1922</div>
+                        <div class="timeline-content">
+                            <h3>Saltanatın Kaldırılması</h3>
+                            <p>1 Kasım 1922'de TBMM'de saltanat kaldırıldı.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1923</div>
+                        <div class="timeline-content">
+                            <h3>Cumhuriyetin İlanı</h3>
+                            <p>29 Ekim 1923'te Cumhuriyet ilan edildi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1924</div>
+                        <div class="timeline-content">
+                            <h3>Halifeliğin Kaldırılması</h3>
+                            <p>3 Mart 1924'te halifelik kaldırıldı.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1925</div>
+                        <div class="timeline-content">
+                            <h3>Şapka Kanunu</h3>
+                            <p>25 Kasım 1925'te Şapka Kanunu kabul edildi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1926</div>
+                        <div class="timeline-content">
+                            <h3>Türk Medeni Kanunu</h3>
+                            <p>17 Şubat 1926'da Türk Medeni Kanunu kabul edildi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1928</div>
+                        <div class="timeline-content">
+                            <h3>Harf İnkılabı</h3>
+                            <p>1 Kasım 1928'de Latin alfabesi kabul edildi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1934</div>
+                        <div class="timeline-content">
+                            <h3>Soyadı Kanunu</h3>
+                            <p>21 Haziran 1934'te Soyadı Kanunu kabul edildi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Atatürk Hakkında</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Mustafa Kemal Atatürk (1881-1938), Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır. Osmanlı İmparatorluğu'nun son döneminde dünyaya gelen Atatürk, askeri dehası ve liderlik yetenekleriyle Türk Kurtuluş Savaşı'nı başarıyla yönetmiş ve modern Türkiye'nin temellerini atmıştır.</p>
+                        <p>Atatürk'ün inkılapları, Türkiye'yi çağdaş medeniyetler seviyesine çıkarmak amacıyla gerçekleştirilmiş kapsamlı reformlardır. Bu inkılaplar, siyasi, hukuki, eğitim, sosyal ve ekonomik alanlarda gerçekleştirilmiş olup, Türkiye'nin modern bir devlet haline gelmesini sağlamıştır.</p>
+                        <div class="ataturk-quote">
+                            <blockquote>
+                                "Beni görmek demek mutlaka yüzümü görmek değildir. Benim fikirlerimi, benim duygularımı anlıyorsanız ve hissediyorsanız bu kafidir."
+                            </blockquote>
+                            <cite>- Mustafa Kemal Atatürk</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for detailed information -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Atatürk İnkılapları. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
